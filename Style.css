@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b0f1a;
+  color: #fff;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.active {
+  display: block;
+}
+
+#splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#auth input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5b7cfa;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-card {
+  background: #141a2f;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.bar {
+  background: #222;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+#barFill {
+  height: 100%;
+  width: 0%;
+  background: #5b7cfa;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mission {
+  background: #141a2f;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
