@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nimbus Lite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Splash -->
+  <div id="splash" class="screen active">
+    <h1>NIMBUS</h1>
+    <p>glow yourself</p>
+  </div>
+
+  <!-- Auth -->
+  <div id="auth" class="screen">
+    <h2>Bem-vindo</h2>
+    <input id="username" placeholder="Seu nome"/>
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <!-- Home -->
+  <div id="home" class="screen">
+    <header>
+      <div>
+        <strong id="userName"></strong>
+        <span id="levelInfo"></span>
+      </div>
+      <button onclick="reset()">⚙️</button>
+    </header>
+
+    <div class="progress-card">
+      <h3>Progresso 30 dias</h3>
+      <p id="cycleProgress">0 / 30 dias</p>
+      <div class="bar">
+        <div id="barFill"></div>
+      </div>
+    </div>
+
+    <h3>Missões de hoje</h3>
+
+    <div id="missions" class="feed"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+    </html>
